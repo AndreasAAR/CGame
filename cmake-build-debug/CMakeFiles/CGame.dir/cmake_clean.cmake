@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/CGame.dir/main.cpp.o"
+  "CMakeFiles/CGame.dir/Sprite.cpp.o"
   "CGame.pdb"
   "CGame"
 )
