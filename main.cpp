@@ -3,19 +3,17 @@
 #include <string>
 #include <SDL_video.h>
 #include <SDL_image.h>
-
+#include "Sprite.h"
 
 
 using namespace std;
 
 
 string bPath = SDL_GetBasePath();
-
 string path = bPath + "/Enemy.png";
 
 int main() {
     std::cout << "GameStart" << std::endl;
-    cout<<bPath<<endl;
     int SDL_Init(SDL_INIT_VIDEO);              // Initialize SDL2
 
     // Create an application window with the following settings:
@@ -40,9 +38,16 @@ int main() {
     SDL_Surface* bild = IMG_Load(path.c_str());
     SDL_Texture* tx = SDL_CreateTextureFromSurface(ren, bild);
     SDL_FreeSurface(bild);
-    SDL_Rect protRect = {5,5,200,300};
+    SDL_Rect protRect = {5,5,bild->w,bild->h};
+
+
+    Sprite* bulbasaur =  new Sprite(300,300,bPath+"Resources/Protagonist.png",ren);
+    SDL_FreeSurface(bulbasaur->getImage());
+    SDL_Rect bulbRect = bulbasaur->getRect();
 
     bool runOn = true;
+
+
 
 // form new destination rect
 
@@ -63,8 +68,8 @@ int main() {
             } // switch
         } // inre while
         SDL_RenderClear(ren);
+        SDL_RenderCopy(ren,bulbasaur->getTexture(),NULL,&bulbasaur->getRect());
         SDL_RenderCopy(ren, tx, NULL, &protRect);
-
         SDL_RenderPresent(ren);
 
     } // yttre while
@@ -77,8 +82,3 @@ int main() {
 
 }
 
-int drawSprite(){
-
-
-
-}

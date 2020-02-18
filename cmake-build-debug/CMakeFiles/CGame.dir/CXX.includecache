@@ -202,6 +202,22 @@ SDL2/begin_code.h
 SDL2/close_code.h
 -
 
+/Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/Sprite.cpp
+Sprite.h
+/Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/Sprite.h
+string
+-
+iostream
+-
+
+/Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/Sprite.h
+string
+-
+SDL_rect.h
+-
+SDL_image.h
+-
+
 /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/main.cpp
 iostream
 -
@@ -213,4 +229,6 @@ SDL_video.h
 -
 SDL_image.h
 -
+Sprite.h
+/Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/Sprite.h
 
