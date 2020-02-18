@@ -26,6 +26,8 @@ public:
 
     Sprite(int xPos,int yPos, string path, SDL_Renderer* renderer);
 
+    void draw();
+
     const string* getPath(){return path; }
 //virtual void tick(const Sprite* []);
 
@@ -35,12 +37,15 @@ protected:
     string* path;
     SDL_Rect rect;
     SDL_Surface* image;
+    SDL_Renderer* renderer;
 
 protected:
     SDL_Texture* texture;
 
 
     ~Sprite(){
+        SDL_DestroyTexture(texture);
+        delete image;
         delete path;
     };
 };

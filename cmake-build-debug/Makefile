@@ -123,6 +123,87 @@ CGame/fast:
 	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/build
 .PHONY : CGame/fast
 
+ExampleGame.o: ExampleGame.cpp.o
+
+.PHONY : ExampleGame.o
+
+# target to build an object file
+ExampleGame.cpp.o:
+	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/ExampleGame.cpp.o
+.PHONY : ExampleGame.cpp.o
+
+ExampleGame.i: ExampleGame.cpp.i
+
+.PHONY : ExampleGame.i
+
+# target to preprocess a source file
+ExampleGame.cpp.i:
+	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/ExampleGame.cpp.i
+.PHONY : ExampleGame.cpp.i
+
+ExampleGame.s: ExampleGame.cpp.s
+
+.PHONY : ExampleGame.s
+
+# target to generate assembly for a file
+ExampleGame.cpp.s:
+	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/ExampleGame.cpp.s
+.PHONY : ExampleGame.cpp.s
+
+GUI.o: GUI.cpp.o
+
+.PHONY : GUI.o
+
+# target to build an object file
+GUI.cpp.o:
+	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/GUI.cpp.o
+.PHONY : GUI.cpp.o
+
+GUI.i: GUI.cpp.i
+
+.PHONY : GUI.i
+
+# target to preprocess a source file
+GUI.cpp.i:
+	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/GUI.cpp.i
+.PHONY : GUI.cpp.i
+
+GUI.s: GUI.cpp.s
+
+.PHONY : GUI.s
+
+# target to generate assembly for a file
+GUI.cpp.s:
+	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/GUI.cpp.s
+.PHONY : GUI.cpp.s
+
+GameEngine.o: GameEngine.cpp.o
+
+.PHONY : GameEngine.o
+
+# target to build an object file
+GameEngine.cpp.o:
+	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/GameEngine.cpp.o
+.PHONY : GameEngine.cpp.o
+
+GameEngine.i: GameEngine.cpp.i
+
+.PHONY : GameEngine.i
+
+# target to preprocess a source file
+GameEngine.cpp.i:
+	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/GameEngine.cpp.i
+.PHONY : GameEngine.cpp.i
+
+GameEngine.s: GameEngine.cpp.s
+
+.PHONY : GameEngine.s
+
+# target to generate assembly for a file
+GameEngine.cpp.s:
+	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/GameEngine.cpp.s
+.PHONY : GameEngine.cpp.s
+
 Sprite.o: Sprite.cpp.o
 
 .PHONY : Sprite.o
@@ -150,33 +231,6 @@ Sprite.cpp.s:
 	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/Sprite.cpp.s
 .PHONY : Sprite.cpp.s
 
-main.o: main.cpp.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/main.cpp.s
-.PHONY : main.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +240,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... CGame"
+	@echo "... ExampleGame.o"
+	@echo "... ExampleGame.i"
+	@echo "... ExampleGame.s"
+	@echo "... GUI.o"
+	@echo "... GUI.i"
+	@echo "... GUI.s"
+	@echo "... GameEngine.o"
+	@echo "... GameEngine.i"
+	@echo "... GameEngine.s"
 	@echo "... Sprite.o"
 	@echo "... Sprite.i"
 	@echo "... Sprite.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
 .PHONY : help
 
 

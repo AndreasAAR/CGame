@@ -13,9 +13,9 @@ class Player: MovingSprite{
 //Supposed to respond to keycommands, Isabelle fix this!
 
 public:
-    Player(int xPos,int yPos, string* path): MovingSprite(xPos, yPos, path){}
+    Player(int xPos,int yPos, string path, SDL_Renderer* renderer): MovingSprite(xPos, yPos, path, renderer){}
 private:
-    void move(const Sprite* []){};
+    void move(int collX, int collY){};
 
 };
 

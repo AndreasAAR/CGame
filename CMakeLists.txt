@@ -3,7 +3,7 @@ project(CGame)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(CGame main.cpp Sprite.cpp Sprite.h MovingSprite.h PlayerSprite.h)
+add_executable(CGame ExampleGame.cpp Sprite.cpp Sprite.h MovingSprite.h PlayerSprite.h GUI.h GUI.cpp GameEngine.cpp GameEngine.h)
 
 set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR})
 
