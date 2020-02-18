@@ -1,0 +1,8 @@
+//
+// Created by AAR on 2020-02-17.
+//
+
+#ifndef CGAME_PLAYERSPRITE_H
+#define CGAME_PLAYERSPRITE_H
+
+#endif //CGAME_PLAYERSPRITE_H

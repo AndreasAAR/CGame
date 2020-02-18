@@ -1,0 +1,8 @@
+//
+// Created by AAR on 2020-02-17.
+//
+
+#ifndef CGAME_MOVINGSPRITE_H
+#define CGAME_MOVINGSPRITE_H
+
+#endif //CGAME_MOVINGSPRITE_H
