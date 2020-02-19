@@ -60,6 +60,22 @@ CMakeFiles/CGame.dir/GameEngine.cpp.o: ../GameEngine.cpp
 CMakeFiles/CGame.dir/GameEngine.cpp.o: ../GameEngine.h
 CMakeFiles/CGame.dir/GameEngine.cpp.o: ../Sprite.h
 
+CMakeFiles/CGame.dir/MovingSprite.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_config.h
+CMakeFiles/CGame.dir/MovingSprite.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_config_macosx.h
+CMakeFiles/CGame.dir/MovingSprite.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_endian.h
+CMakeFiles/CGame.dir/MovingSprite.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_error.h
+CMakeFiles/CGame.dir/MovingSprite.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_pixels.h
+CMakeFiles/CGame.dir/MovingSprite.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_platform.h
+CMakeFiles/CGame.dir/MovingSprite.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_rect.h
+CMakeFiles/CGame.dir/MovingSprite.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_rwops.h
+CMakeFiles/CGame.dir/MovingSprite.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_stdinc.h
+CMakeFiles/CGame.dir/MovingSprite.cpp.o: /Library/Frameworks/SDL2.framework/Headers/begin_code.h
+CMakeFiles/CGame.dir/MovingSprite.cpp.o: /Library/Frameworks/SDL2.framework/Headers/close_code.h
+CMakeFiles/CGame.dir/MovingSprite.cpp.o: /Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
+CMakeFiles/CGame.dir/MovingSprite.cpp.o: ../MovingSprite.cpp
+CMakeFiles/CGame.dir/MovingSprite.cpp.o: ../MovingSprite.h
+CMakeFiles/CGame.dir/MovingSprite.cpp.o: ../Sprite.h
+
 CMakeFiles/CGame.dir/NPCSprite.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_config.h
 CMakeFiles/CGame.dir/NPCSprite.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_config_macosx.h
 CMakeFiles/CGame.dir/NPCSprite.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_endian.h

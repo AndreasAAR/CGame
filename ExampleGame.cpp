@@ -12,7 +12,6 @@ using namespace std;
 
 
 string bPath = SDL_GetBasePath();
-string path = bPath + "/Enemy.png";
 
 
 int main() {
@@ -22,7 +21,7 @@ int main() {
     SDL_Window* window = gui->getWin();
     SDL_Renderer* renderer = gui->getRen();
 
-    NPCSprite* bulMove =  new NPCSprite(400,400,bPath+"Resources/Protagonist.png",renderer);
+    NPCSprite* bulMove =  new NPCSprite(150,150,bPath+"Resources/Protagonist.png",renderer);
 
     vector<Sprite*> sprites =  {bulMove};
     vector<Sprite*> spritesToRemove;
@@ -46,7 +45,6 @@ int main() {
             } // switch
         } // inre while
         SDL_RenderClear(renderer);
-
         for(int i = 0; i< sprites.size();i++){
             sprites[i]->tick(NULL,NULL);
         }

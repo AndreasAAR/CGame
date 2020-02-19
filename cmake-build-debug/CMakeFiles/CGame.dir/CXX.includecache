@@ -248,6 +248,10 @@ GUI.h
 Sprite.h
 /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/Sprite.h
 
+/Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/MovingSprite.cpp
+MovingSprite.h
+/Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/MovingSprite.h
+
 /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/MovingSprite.h
 Sprite.h
 /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/Sprite.h

@@ -204,6 +204,33 @@ GameEngine.cpp.s:
 	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/GameEngine.cpp.s
 .PHONY : GameEngine.cpp.s
 
+MovingSprite.o: MovingSprite.cpp.o
+
+.PHONY : MovingSprite.o
+
+# target to build an object file
+MovingSprite.cpp.o:
+	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/MovingSprite.cpp.o
+.PHONY : MovingSprite.cpp.o
+
+MovingSprite.i: MovingSprite.cpp.i
+
+.PHONY : MovingSprite.i
+
+# target to preprocess a source file
+MovingSprite.cpp.i:
+	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/MovingSprite.cpp.i
+.PHONY : MovingSprite.cpp.i
+
+MovingSprite.s: MovingSprite.cpp.s
+
+.PHONY : MovingSprite.s
+
+# target to generate assembly for a file
+MovingSprite.cpp.s:
+	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/MovingSprite.cpp.s
+.PHONY : MovingSprite.cpp.s
+
 NPCSprite.o: NPCSprite.cpp.o
 
 .PHONY : NPCSprite.o
@@ -276,6 +303,9 @@ help:
 	@echo "... GameEngine.o"
 	@echo "... GameEngine.i"
 	@echo "... GameEngine.s"
+	@echo "... MovingSprite.o"
+	@echo "... MovingSprite.i"
+	@echo "... MovingSprite.s"
 	@echo "... NPCSprite.o"
 	@echo "... NPCSprite.i"
 	@echo "... NPCSprite.s"

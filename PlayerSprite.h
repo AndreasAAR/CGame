@@ -7,7 +7,7 @@
 
 #include "MovingSprite.h"
 
-class Player: MovingSprite{
+class Player: public MovingSprite{
 
 
 //Supposed to respond to keycommands, Isabelle fix this!
