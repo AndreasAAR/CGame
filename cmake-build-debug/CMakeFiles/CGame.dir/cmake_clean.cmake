@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/CGame.dir/Sprite.cpp.o"
   "CMakeFiles/CGame.dir/GUI.cpp.o"
   "CMakeFiles/CGame.dir/GameEngine.cpp.o"
+  "CMakeFiles/CGame.dir/NPCSprite.cpp.o"
   "CGame.pdb"
   "CGame"
 )

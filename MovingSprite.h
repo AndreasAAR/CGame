@@ -9,17 +9,19 @@
 #include <SDL_rect.h>
 #include <SDL_image.h>
 
-class MovingSprite: Sprite{
+class MovingSprite:public Sprite{
 
 public:
-    MovingSprite(int xPos, int yPos, string path, SDL_Renderer* renderer): Sprite(xPos, yPos, path, renderer){};
-
-    ~MovingSprite(){
-        this->~Sprite();
+    MovingSprite(int xPos, int yPos, string path, SDL_Renderer* renderer): Sprite(xPos, yPos, path, renderer)
+    {
     };
+
 protected:
-    virtual void move(int collideX, int collideY);
+    virtual void move(int collideX, int collideY) = 0;
+
 };
+
+
 
 
 #endif //CGAME_MOVINGSPRITE_H

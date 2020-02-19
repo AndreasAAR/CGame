@@ -27,9 +27,8 @@ public:
     Sprite(int xPos,int yPos, string path, SDL_Renderer* renderer);
 
     void draw();
-
+    virtual void tick(int x, int y) = 0;
     const string* getPath(){return path; }
-//virtual void tick(const Sprite* []);
 
 protected:
     int xPos;
@@ -39,21 +38,16 @@ protected:
     SDL_Surface* image;
     SDL_Renderer* renderer;
 
+
 protected:
     SDL_Texture* texture;
-
 
     ~Sprite(){
         SDL_DestroyTexture(texture);
         delete image;
         delete path;
     };
+
 };
-
-
-
-
-
-
 
 #endif //CGAME_SPRITE_H

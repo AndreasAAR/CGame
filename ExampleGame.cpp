@@ -5,7 +5,8 @@
 #include <SDL_image.h>
 #include "Sprite.h"
 #include "GUI.h"
-
+#include <vector>
+#include "NPCSprite.h"
 
 using namespace std;
 
@@ -13,28 +14,18 @@ using namespace std;
 string bPath = SDL_GetBasePath();
 string path = bPath + "/Enemy.png";
 
+
 int main() {
-              // Initialize SDL2
-
-
-
+    // Initialize SDL2
     // Create an application window with the following settings:
-
-
     GUI* gui = new GUI("PokeDodgeBall", 800,500);
     SDL_Window* window = gui->getWin();
     SDL_Renderer* renderer = gui->getRen();
 
+    NPCSprite* bulMove =  new NPCSprite(400,400,bPath+"Resources/Protagonist.png",renderer);
 
-
-    SDL_Surface* bild = IMG_Load(path.c_str());
-    SDL_Texture* tx = SDL_CreateTextureFromSurface(renderer, bild);
-    SDL_FreeSurface(bild);
-    SDL_Rect protRect = {5,5,bild->w,bild->h};
-
-
-    Sprite* bulbasaur =  new Sprite(300,300,bPath+"Resources/Protagonist.png",renderer);
-
+    vector<Sprite*> sprites =  {bulMove};
+    vector<Sprite*> spritesToRemove;
 
     bool runOn = true;
 
@@ -55,13 +46,12 @@ int main() {
             } // switch
         } // inre while
         SDL_RenderClear(renderer);
-        SDL_RenderCopy(renderer, tx, NULL, &protRect);
-        bulbasaur->draw();
+
+        for(int i = 0; i< sprites.size();i++){
+            sprites[i]->tick(NULL,NULL);
+        }
         SDL_RenderPresent(renderer);
-
     } // yttre while
-    SDL_DestroyTexture(tx);
-
 
     SDL_Quit();
     return 0;

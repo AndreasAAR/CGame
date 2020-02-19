@@ -7,6 +7,7 @@
 #include <iostream>
 
 Sprite::Sprite(int xPos,int yPos, string path, SDL_Renderer* renderer){
+
     image = IMG_Load(path.c_str());
     this->texture = SDL_CreateTextureFromSurface(renderer,image);
     rect = {xPos,yPos, image->w,image->h};
@@ -19,6 +20,9 @@ void Sprite::draw(){
    SDL_RenderCopy(renderer,texture,NULL,&rect);
 
 }
+
+
+
 
 
 
