@@ -8,10 +8,16 @@
 
 #include "MovingSprite.h"
 
+
+enum Direction{
+    TOP,BOT,LEFT,RIGHT
+};
+
 class NPCSprite:public MovingSprite {
 
 public:
-    NPCSprite(int xPos, int yPos, string path, SDL_Renderer *renderer);
+    Direction direction;
+    NPCSprite(int xPos, int yPos, string path, SDL_Renderer *renderer, enum direction);
     void move(int collideX, int collideY);
     void tick(int collisionX, int collisionY);
 };

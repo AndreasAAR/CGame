@@ -20,7 +20,6 @@ int main() {
     GUI* gui = new GUI("PokeDodgeBall", 800,500);
     SDL_Window* window = gui->getWin();
     SDL_Renderer* renderer = gui->getRen();
-
     NPCSprite* bulMove =  new NPCSprite(150,150,bPath+"Resources/Protagonist.png",renderer);
 
     vector<Sprite*> sprites =  {bulMove};
@@ -33,26 +32,7 @@ int main() {
     // Close and destroy the window
     // Clean up
 
-    while (runOn) {
-        SDL_Event eve;
-        while(SDL_PollEvent(&eve)){
-            switch (eve.type) {
-                case SDL_QUIT: runOn = false; break;
-                case SDL_KEYDOWN:
-                    if (eve.key.keysym.sym == SDLK_DOWN)
-                        runOn = false;
-                    break;
-            } // switch
-        } // inre while
-        SDL_RenderClear(renderer);
-        for(int i = 0; i< sprites.size();i++){
-            sprites[i]->tick(NULL,NULL);
-        }
-        SDL_RenderPresent(renderer);
-    } // yttre while
 
-    SDL_Quit();
-    return 0;
 
 }
 

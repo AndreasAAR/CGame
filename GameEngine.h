@@ -9,14 +9,17 @@
 #include "GUI.h"
 #include "Sprite.h"
 
+
+
 class GameEngine {
 
-    GUI gui;
     std::vector<Sprite*> spritesToRemove;
     std::vector<Sprite*> sprites;
+    SDL_Renderer* renderer;
+    GUI* gui;
 
 public:
-    GameEngine(GUI gui);
+    GameEngine(GUI* gui, SDL_Renderer* renderer);
     void gameLoop();
     void addSprites(std::vector<Sprite*> sprites);
 };
