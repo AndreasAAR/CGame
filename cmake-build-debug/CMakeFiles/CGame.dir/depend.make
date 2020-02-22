@@ -18,6 +18,7 @@ CMakeFiles/CGame.dir/ExampleGame.cpp.o: /Library/Frameworks/SDL2.framework/Heade
 CMakeFiles/CGame.dir/ExampleGame.cpp.o: /Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
 CMakeFiles/CGame.dir/ExampleGame.cpp.o: ../ExampleGame.cpp
 CMakeFiles/CGame.dir/ExampleGame.cpp.o: ../GUI.h
+CMakeFiles/CGame.dir/ExampleGame.cpp.o: ../GameEngine.h
 CMakeFiles/CGame.dir/ExampleGame.cpp.o: ../MovingSprite.h
 CMakeFiles/CGame.dir/ExampleGame.cpp.o: ../NPCSprite.h
 CMakeFiles/CGame.dir/ExampleGame.cpp.o: ../Sprite.h
@@ -58,6 +59,8 @@ CMakeFiles/CGame.dir/GameEngine.cpp.o: /Library/Frameworks/SDL2_image.framework/
 CMakeFiles/CGame.dir/GameEngine.cpp.o: ../GUI.h
 CMakeFiles/CGame.dir/GameEngine.cpp.o: ../GameEngine.cpp
 CMakeFiles/CGame.dir/GameEngine.cpp.o: ../GameEngine.h
+CMakeFiles/CGame.dir/GameEngine.cpp.o: ../MovingSprite.h
+CMakeFiles/CGame.dir/GameEngine.cpp.o: ../NPCSprite.h
 CMakeFiles/CGame.dir/GameEngine.cpp.o: ../Sprite.h
 
 CMakeFiles/CGame.dir/MovingSprite.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_config.h

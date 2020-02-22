@@ -9,19 +9,23 @@
 #include "GUI.h"
 #include "Sprite.h"
 
-
+using namespace std;
 
 class GameEngine {
-
-    std::vector<Sprite*> spritesToRemove;
-    std::vector<Sprite*> sprites;
+public:
+    vector<int> spritesToRemoveIndex;
+    vector<Sprite*>  spritesToDelete;
+    vector<Sprite*>  sprites;
     SDL_Renderer* renderer;
     GUI* gui;
-
-public:
-    GameEngine(GUI* gui, SDL_Renderer* renderer);
+    GameEngine(GUI* gui, SDL_Renderer* renderer, int windowHeight, int windowWidth);
     void gameLoop();
     void addSprites(std::vector<Sprite*> sprites);
+private:
+    int windowWidth;
+    int windowHeight;
+   void addSprite(Sprite* sprite);
+   bool offScreen(Sprite* sprite);
 };
 
 

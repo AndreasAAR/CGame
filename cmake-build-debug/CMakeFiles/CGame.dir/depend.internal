@@ -19,6 +19,7 @@ CMakeFiles/CGame.dir/ExampleGame.cpp.o
  /Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
  /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/ExampleGame.cpp
  /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/GUI.h
+ /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/GameEngine.h
  /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/MovingSprite.h
  /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/NPCSprite.h
  /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/Sprite.h
@@ -59,6 +60,8 @@ CMakeFiles/CGame.dir/GameEngine.cpp.o
  /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/GUI.h
  /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/GameEngine.cpp
  /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/GameEngine.h
+ /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/MovingSprite.h
+ /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/NPCSprite.h
  /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/Sprite.h
 CMakeFiles/CGame.dir/MovingSprite.cpp.o
  /Library/Frameworks/SDL2.framework/Headers/SDL_config.h

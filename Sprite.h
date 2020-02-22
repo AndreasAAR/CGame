@@ -7,6 +7,7 @@
 #include <string>
 #include <SDL_rect.h>
 #include <SDL_image.h>
+#include <iostream>
 
 using namespace std;
 
@@ -29,7 +30,12 @@ public:
     void draw();
     virtual void tick(int x, int y) = 0;
     const string* getPath(){return path; }
-
+    ~Sprite(){
+        SDL_DestroyTexture(texture);
+        delete image;
+        delete path;
+        cout<<"Sprite deleted"<<endl;
+    };
 protected:
     int xPos;
     int yPos;
@@ -42,11 +48,7 @@ protected:
 protected:
     SDL_Texture* texture;
 
-    ~Sprite(){
-        SDL_DestroyTexture(texture);
-        delete image;
-        delete path;
-    };
+
 
 };
 

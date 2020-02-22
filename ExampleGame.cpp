@@ -7,32 +7,24 @@
 #include "GUI.h"
 #include <vector>
 #include "NPCSprite.h"
+#include "GameEngine.h"
 
 using namespace std;
 
 
 string bPath = SDL_GetBasePath();
-
+int windowHeight = 800;
+int windowWidth =  500;
 
 int main() {
     // Initialize SDL2
     // Create an application window with the following settings:
-    GUI* gui = new GUI("PokeDodgeBall", 800,500);
+    GUI* gui = new GUI("PokeDodgeBall", windowHeight,windowWidth);
     SDL_Window* window = gui->getWin();
     SDL_Renderer* renderer = gui->getRen();
-    NPCSprite* bulMove =  new NPCSprite(150,150,bPath+"Resources/Protagonist.png",renderer);
-
-    vector<Sprite*> sprites =  {bulMove};
-    vector<Sprite*> spritesToRemove;
-
-    bool runOn = true;
-
-    // form new destination rect
-    // The window is open: could enter program loop here (see SDL_PollEvent())
-    // Close and destroy the window
-    // Clean up
-
-
+    GameEngine* engine = new GameEngine(gui,renderer,windowHeight, windowWidth);
+    Sprite* bulMove =  new NPCSprite(150,150,bPath+"Resources/Protagonist.png",renderer, LEFT);
+    engine->gameLoop();
 
 }
 

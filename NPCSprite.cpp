@@ -3,16 +3,13 @@
 //
 
 #include "NPCSprite.h"
-
 NPCSprite::NPCSprite(int xPos, int yPos, string path, SDL_Renderer *renderer,Direction direction)
         : MovingSprite(xPos, yPos, path, renderer) {
     this->direction = direction;
 }
 
 void NPCSprite::move(int collideX, int collideY){
-
     switch(direction){
-
         case(TOP):
             rect.y--;
             break;
@@ -26,15 +23,10 @@ void NPCSprite::move(int collideX, int collideY){
             rect.x++;
             break;
     }
-
-
-
 }
-
-
-
 
 void NPCSprite::tick(int collisionX, int collisionY){
     draw();
     move(collisionX,collisionY);
 }
+
