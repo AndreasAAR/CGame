@@ -17,7 +17,6 @@ public:
 private:
     SDL_KeyboardEvent direction;
     void move(int collX, int collY){};
-
 };
 
 //Behöver funktion for move som innehåller keyboardinput
