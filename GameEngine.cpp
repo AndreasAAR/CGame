@@ -10,30 +10,29 @@ void GameEngine::addSprite(Sprite* sprite){
     GameEngine::sprites.push_back(sprite);
 }
 
-void GameEngine::gameLoop() {
-
+//Make so sent as
+void GameEngine::spawnSprites(){
     string bPath = SDL_GetBasePath();
+    spawnCounter++;
+    if (spawnCounter % 500 == 0) {
+        int randomPos = rand() % windowHeight - 100;
+        if (randomPos > windowHeight - 200)
+            randomPos -= 300;
+        if (randomPos < 200)
+            randomPos += 300;
+        addSprite(new NPCSprite(0, randomPos, bPath + "Resources/Protagonist.png", renderer, RIGHT));
+    }
+
+}
+
+void GameEngine::gameLoop() {
     bool runOn = true;
-    Sprite * bulMove = new NPCSprite(150, 0, bPath + "Resources/Protagonist.png", renderer, RIGHT);
-    sprites.push_back(bulMove);
-    // vector<Sprite*> sprites =  {bulMove};
-
-
-    //insert game specific spawning and destruction "EngineTick"
-    int spawnCounter = 0;
-
+    //Put into a template func!
     while (runOn) {
 
-        // Put in separate functionset later on
-        spawnCounter++;
-        if (spawnCounter % 500 == 0) {
-            int randomPos = rand() % windowHeight - 100;
-            if (randomPos > windowHeight - 200)
-                randomPos -= 300;
-            if (randomPos < 200)
-                randomPos += 300;
-            addSprite(new NPCSprite(0, randomPos, bPath + "Resources/Protagonist.png", renderer, RIGHT));
-        }
+        //TODO
+        // Put spawning in installable function later
+        spawnSprites();
 
         SDL_Event eve;
         while (SDL_PollEvent(&eve)) {
@@ -48,31 +47,47 @@ void GameEngine::gameLoop() {
             } // switch
         } // inre while
         SDL_RenderClear(renderer);
-        for (int i = 0; i < sprites.size(); i++) {
-            //insert collisioncheck
-            if(offScreen(sprites[i])){
-                cout<<"time to remove"<<i<<endl;
-                GameEngine::spritesToRemoveIndex.push_back(i);
-                spritesToDelete.push_back(sprites[i]);
-            }else{
-                sprites[i]->tick(NULL, NULL);
-            }
-         }
-         for(int i = 0; i < spritesToRemoveIndex.size(); i++){
-            GameEngine::sprites.erase(sprites.begin());
-         }
-         for(int i = 0; i < spritesToDelete.size();i++){
-             cout<<"trying to delete"<<spritesToRemoveIndex[i]<<endl;
-             delete spritesToDelete[i];
-        }
-        spritesToRemoveIndex.clear();
-        spritesToDelete.clear();
+        //Where sprites are added, collisionchecked and removed
+        manageSprites();
         SDL_RenderPresent(renderer);
     }
 
     SDL_Quit();
 
 } // yttre while
+
+
+
+void GameEngine::manageSprites(){
+
+    for (int i = 0; i < sprites.size(); i++) {
+        //insert collisioncheck också!
+        int collisionX = NULL;
+        int collissionY = NULL;
+        if(offScreen(sprites[i])){
+            spritesToDelete.push_back(sprites[i]);
+        }else{
+            sprites[i]->tick(collisionX, collissionY);
+        }
+    }
+
+    deleteSprites();
+    collidedSprites.clear();
+}
+
+void GameEngine::deleteSprites(){
+
+    for (Sprite* s : spritesToDelete) {
+        for (vector<Sprite*>::iterator i = sprites.begin(); i != sprites.end();)
+            if (*i == s) {
+                sprites.erase(i);
+                delete s;
+            }//if
+            else
+                i++;
+    }//outer for
+    spritesToDelete.clear();
+}
 
 
 bool GameEngine::offScreen(Sprite* sprite){
@@ -83,7 +98,9 @@ bool GameEngine::offScreen(Sprite* sprite){
     return false;
 }
 
+SDL_Rect GameEngine::collidedOther(Sprite *other, Sprite *current){
 
+};
 
 
 

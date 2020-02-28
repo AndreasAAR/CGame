@@ -18,7 +18,6 @@ public:
     void tick(int x, int y);
 protected:
     virtual void move(int collideX, int collideY) = 0;
-
 };
 
 

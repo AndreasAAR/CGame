@@ -15,8 +15,13 @@ class Player: public MovingSprite{
 public:
     Player(int xPos,int yPos, string path, SDL_Renderer* renderer): MovingSprite(xPos, yPos, path, renderer){}
 private:
+    SDL_KeyboardEvent direction;
     void move(int collX, int collY){};
 
 };
+
+//Behöver funktion for move som innehåller keyboardinput
+//Behöver också funktion för movement
+//Behöver attribut för key
 
 #endif //CGAME_PLAYERSPRITE_H

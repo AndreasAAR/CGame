@@ -24,24 +24,22 @@ public:
     SDL_Surface *getImage() const { return image;}
 
     SDL_Texture *getTexture() const { return texture; }
-
+    SDL_Surface* image;
     Sprite(int xPos,int yPos, string path, SDL_Renderer* renderer);
 
     void draw();
     virtual void tick(int x, int y) = 0;
     const string* getPath(){return path; }
-    ~Sprite(){
+    virtual ~Sprite(){
+        cout<<"Sprite deleted";
         SDL_DestroyTexture(texture);
-        delete image;
-        delete path;
-        cout<<"Sprite deleted"<<endl;
     };
 protected:
     int xPos;
     int yPos;
     string* path;
     SDL_Rect rect;
-    SDL_Surface* image;
+
     SDL_Renderer* renderer;
 
 
