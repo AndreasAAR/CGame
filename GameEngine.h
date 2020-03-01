@@ -31,7 +31,7 @@ private:
     int windowHeight;
    void addSprite(Sprite* sprite);
    bool offScreen(Sprite* sprite);
-    void manageSprites();
+    void manageSprites(SDL_Event* event);
     void deleteSprites();
     bool collidingScreen(SDL_Rect* rect, SDL_Window* window);
     void spawnSprites();

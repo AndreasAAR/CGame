@@ -38,17 +38,17 @@ void GameEngine::gameLoop() {
         while (SDL_PollEvent(&eve)) {
             switch (eve.type) {
                 case SDL_QUIT:
-                    runOn = false;
+                   runOn = false;
                     break;
                 case SDL_KEYDOWN:
                     if (eve.key.keysym.sym == SDLK_DOWN)
-                        runOn = false;
+                       // runOn = false;
                     break;
             } // switch
         } // inre while
         SDL_RenderClear(renderer);
         //Where sprites are added, collisionchecked and removed
-        manageSprites();
+        manageSprites(&eve);
         SDL_RenderPresent(renderer);
     }
 
@@ -58,7 +58,7 @@ void GameEngine::gameLoop() {
 
 
 
-void GameEngine::manageSprites(){
+void GameEngine::manageSprites(SDL_Event* event){
 
     for (int i = 0; i < sprites.size(); i++) {
         //insert collisioncheck också!
