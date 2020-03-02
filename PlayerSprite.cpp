@@ -22,5 +22,12 @@ void PlayerSprite::setDirection(SDL_Event *event) {
         default:
             break;
     }
-    this->direction = LEFT;
+    this->direction = currentDirection;
+}
+void PlayerSprite::move(int collisionX, int collisionY){
+    NPCSprite::move(collisionX,collisionY);
+}
+void PlayerSprite::tick(int collisionX, int collisionY, SDL_Event *event){
+    setDirection(event);
+    NPCSprite::tick(collisionX,collisionY,event);
 }

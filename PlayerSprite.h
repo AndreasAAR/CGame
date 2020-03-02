@@ -18,6 +18,8 @@ public:
     PlayerSprite(int xPos,int yPos, string path, SDL_Renderer* renderer, Direction direction): NPCSprite(xPos, yPos, path, renderer, direction){}
 
     void setDirection(SDL_Event* event );
+    void tick(int collisionX, int collisionY, SDL_Event *event);
+    void move(int collisionX, int collisionY);
 private:
 
 

@@ -5,6 +5,7 @@
 #include "GameEngine.h"
 #include "Sprite.h"
 #include "NPCSprite.h"
+#include "PlayerSprite.h"
 
 void GameEngine::addSprite(Sprite* sprite){
     GameEngine::sprites.push_back(sprite);
@@ -20,7 +21,7 @@ void GameEngine::spawnSprites(){
             randomPos -= 300;
         if (randomPos < 200)
             randomPos += 300;
-        addSprite(new NPCSprite(0, randomPos, bPath + "Resources/Protagonist.png", renderer, RIGHT));
+       // addSprite(new NPCSprite(0, randomPos, bPath + "Resources/Protagonist.png", renderer, RIGHT));
     }
 
 }
@@ -67,7 +68,7 @@ void GameEngine::manageSprites(SDL_Event* event){
         if(offScreen(sprites[i])){
             spritesToDelete.push_back(sprites[i]);
         }else{
-            sprites[i]->tick(collisionX, collissionY);
+            sprites[i]->tick(collisionX, collissionY,event);
         }
     }
 
@@ -105,10 +106,12 @@ SDL_Rect GameEngine::collidedOther(Sprite *other, Sprite *current){
 
 
 GameEngine::GameEngine(GUI *gui, SDL_Renderer *renderer,int windowHeight, int windowWidth) {
+    string bPath = SDL_GetBasePath();
     this->renderer = renderer;
     this->gui = gui;
     this->windowWidth= windowWidth;
     this->windowHeight = windowHeight;
+    addSprite(new PlayerSprite(300, 300, bPath + "Resources/Protagonist.png", renderer, LEFT));
 }
 
 

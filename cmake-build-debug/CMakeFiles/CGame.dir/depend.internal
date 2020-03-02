@@ -80,6 +80,7 @@ CMakeFiles/CGame.dir/GameEngine.cpp.o
  /Users/Isabelle/CLionProjects/Hej/GameEngine.h
  /Users/Isabelle/CLionProjects/Hej/MovingSprite.h
  /Users/Isabelle/CLionProjects/Hej/NPCSprite.h
+ /Users/Isabelle/CLionProjects/Hej/PlayerSprite.h
  /Users/Isabelle/CLionProjects/Hej/Sprite.h
 CMakeFiles/CGame.dir/MovingSprite.cpp.o
  /Library/Frameworks/SDL2.framework/Headers/SDL_config.h

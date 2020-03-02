@@ -4,7 +4,7 @@
 
 #include "MovingSprite.h"
 
-void MovingSprite::tick(int x, int y){
+void MovingSprite::tick(int x, int y, SDL_Event *event){
 
     move(x,y);
     draw();

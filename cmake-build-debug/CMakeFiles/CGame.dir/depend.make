@@ -79,6 +79,7 @@ CMakeFiles/CGame.dir/GameEngine.cpp.o: ../GameEngine.cpp
 CMakeFiles/CGame.dir/GameEngine.cpp.o: ../GameEngine.h
 CMakeFiles/CGame.dir/GameEngine.cpp.o: ../MovingSprite.h
 CMakeFiles/CGame.dir/GameEngine.cpp.o: ../NPCSprite.h
+CMakeFiles/CGame.dir/GameEngine.cpp.o: ../PlayerSprite.h
 CMakeFiles/CGame.dir/GameEngine.cpp.o: ../Sprite.h
 
 CMakeFiles/CGame.dir/MovingSprite.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_config.h
