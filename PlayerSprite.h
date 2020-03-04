@@ -5,18 +5,24 @@
 #ifndef CGAME_PLAYERSPRITE_H
 #define CGAME_PLAYERSPRITE_H
 
+#include "NPCSprite.h"
+
 #include "MovingSprite.h"
 
-class Player: public MovingSprite{
+class PlayerSprite: public NPCSprite{
 
 
 //Supposed to respond to keycommands, Isabelle fix this!
 
 public:
-    Player(int xPos,int yPos, string path, SDL_Renderer* renderer): MovingSprite(xPos, yPos, path, renderer){}
+    PlayerSprite(int xPos,int yPos, string path, SDL_Renderer* renderer, Direction direction): NPCSprite(xPos, yPos, path, renderer, direction){}
+
+    void setDirection(SDL_Event* event );
+    void tick(int collisionX, int collisionY, SDL_Event *event);
+    void move(int collisionX, int collisionY);
 private:
-    SDL_KeyboardEvent direction;
-    void move(int collX, int collY){};
+
+
 };
 
 //Behöver funktion for move som innehåller keyboardinput

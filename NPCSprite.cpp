@@ -25,7 +25,7 @@ void NPCSprite::move(int collideX, int collideY){
     }
 }
 
-void NPCSprite::tick(int collisionX, int collisionY){
+void NPCSprite::tick(int collisionX, int collisionY, SDL_Event *event){
     draw();
     move(collisionX,collisionY);
 }

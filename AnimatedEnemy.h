@@ -13,8 +13,8 @@ public:
     AnimatedEnemy(int xPos, int yPos, const string &path, SDL_Renderer *renderer, Direction direction, string imagePath,
                       string imageFolder, int NUMBERFRAMES);
 
-    void tick(int collisionX, int collisionY) override{
-        NPCSprite::tick(collisionX, collisionY);
+    void tick(int collisionX, int collisionY,SDL_Event *event) override{
+        NPCSprite::tick(collisionX, collisionY,event);
         updateImage();
 
     }

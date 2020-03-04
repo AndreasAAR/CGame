@@ -28,7 +28,7 @@ public:
     Sprite(int xPos,int yPos, string path, SDL_Renderer* renderer);
 
     void draw();
-    virtual void tick(int x, int y) = 0;
+    virtual void tick(int x, int y, SDL_Event *event) = 0;
     const string* getPath(){return path; }
     virtual ~Sprite(){
         cout<<"Sprite deleted";
