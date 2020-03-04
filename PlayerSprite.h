@@ -6,6 +6,7 @@
 #define CGAME_PLAYERSPRITE_H
 
 #include "MovingSprite.h"
+#include "NPCSprite.h"
 
 class Player: public MovingSprite{
 
@@ -13,10 +14,17 @@ class Player: public MovingSprite{
 //Supposed to respond to keycommands, Isabelle fix this!
 
 public:
-    Player(int xPos,int yPos, string path, SDL_Renderer* renderer): MovingSprite(xPos, yPos, path, renderer){}
+    Player(int xPos,int yPos, string path, SDL_Renderer* renderer): MovingSprite(xPos, yPos, path, renderer){
+
+    }
 private:
-    SDL_KeyboardEvent direction;
-    void move(int collX, int collY){};
+    void move(Sprite *collissionSprite) {
+
+    };
+    void setDirection(){
+
+    }
+
 };
 
 //Behöver funktion for move som innehåller keyboardinput

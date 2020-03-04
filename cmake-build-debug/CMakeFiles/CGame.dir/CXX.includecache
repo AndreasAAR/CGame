@@ -92,6 +92,18 @@ begin_code.h
 close_code.h
 /Library/Frameworks/SDL2.framework/Headers/close_code.h
 
+/Library/Frameworks/SDL2.framework/Headers/SDL_render.h
+SDL_stdinc.h
+/Library/Frameworks/SDL2.framework/Headers/SDL_stdinc.h
+SDL_rect.h
+/Library/Frameworks/SDL2.framework/Headers/SDL_rect.h
+SDL_video.h
+/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
+begin_code.h
+/Library/Frameworks/SDL2.framework/Headers/begin_code.h
+close_code.h
+/Library/Frameworks/SDL2.framework/Headers/close_code.h
+
 /Library/Frameworks/SDL2.framework/Headers/SDL_rwops.h
 SDL_stdinc.h
 /Library/Frameworks/SDL2.framework/Headers/SDL_stdinc.h
@@ -205,6 +217,16 @@ SDL2/close_code.h
 /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/AnimatedEnemy.cpp
 AnimatedEnemy.h
 /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/AnimatedEnemy.h
+stdlib.h
+-
+sys/types.h
+-
+dirent.h
+-
+string
+-
+vector
+-
 
 /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/AnimatedEnemy.h
 vector
@@ -255,6 +277,10 @@ Sprite.h
 /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/Sprite.h
 NPCSprite.h
 /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/NPCSprite.h
+AnimatedEnemy.h
+/Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/AnimatedEnemy.h
+stdio.h
+/Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/stdio.h
 
 /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/GameEngine.h
 vector
@@ -267,6 +293,8 @@ Sprite.h
 /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/MovingSprite.cpp
 MovingSprite.h
 /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/MovingSprite.h
+SDL_rect.h
+/Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/SDL_rect.h
 
 /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/MovingSprite.h
 Sprite.h
@@ -277,6 +305,12 @@ SDL_image.h
 -
 
 /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/NPCSprite.cpp
+SDL_rect.h
+-
+SDL_render.h
+-
+MovingSprite.h
+/Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/MovingSprite.h
 NPCSprite.h
 /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/NPCSprite.h
 

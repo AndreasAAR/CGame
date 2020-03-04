@@ -23,7 +23,6 @@ int main() {
     SDL_Window* window = gui->getWin();
     SDL_Renderer* renderer = gui->getRen();
     GameEngine* engine = new GameEngine(gui,renderer,windowHeight, windowWidth);
-    Sprite* bulMove =  new NPCSprite(150,150,bPath+"Resources/Protagonist.png",renderer, LEFT);
     engine->gameLoop();
 }
 

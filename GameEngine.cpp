@@ -5,22 +5,35 @@
 #include "GameEngine.h"
 #include "Sprite.h"
 #include "NPCSprite.h"
+#include "AnimatedEnemy.h"
+#include "stdio.h"
+#include "PlayerSprite.h"
 
 void GameEngine::addSprite(Sprite* sprite){
     GameEngine::sprites.push_back(sprite);
 }
 
+
+
+
 //Make so sent as
 void GameEngine::spawnSprites(){
+
     string bPath = SDL_GetBasePath();
     spawnCounter++;
     if (spawnCounter % 500 == 0) {
         int randomPos = rand() % windowHeight - 100;
-        if (randomPos > windowHeight - 200)
+        if (randomPos > windowHeight - 100)
             randomPos -= 300;
         if (randomPos < 200)
             randomPos += 300;
-        addSprite(new NPCSprite(0, randomPos, bPath + "Resources/Protagonist.png", renderer, RIGHT));
+
+
+        string path = bPath+"Resources/pokeball/frame0.png";
+        NPCSprite* test = new NPCSprite(0, randomPos, path , renderer, RIGHT);
+        NPCSprite* test2 = new NPCSprite(400, randomPos, path , renderer, LEFT);
+        addSprite(test);
+        addSprite(test2);
     }
 
 }
@@ -34,21 +47,23 @@ void GameEngine::gameLoop() {
         // Put spawning in installable function later
         spawnSprites();
 
-        SDL_Event eve;
-        while (SDL_PollEvent(&eve)) {
-            switch (eve.type) {
+        SDL_Event keyPress;
+        while (SDL_PollEvent(&keyPress)) {
+
+
+            switch (keyPress.type) {
                 case SDL_QUIT:
                     runOn = false;
                     break;
                 case SDL_KEYDOWN:
-                    if (eve.key.keysym.sym == SDLK_DOWN)
+                    if (keyPress.key.keysym.sym == SDLK_DOWN)
                         runOn = false;
                     break;
             } // switch
         } // inre while
         SDL_RenderClear(renderer);
         //Where sprites are added, collisionchecked and removed
-        manageSprites();
+        manageSprites(&keyPress);
         SDL_RenderPresent(renderer);
     }
 
@@ -58,16 +73,26 @@ void GameEngine::gameLoop() {
 
 
 
-void GameEngine::manageSprites(){
-
+void GameEngine::manageSprites(SDL_Event* keyPress){
     for (int i = 0; i < sprites.size(); i++) {
         //insert collisioncheck också!
-        int collisionX = NULL;
-        int collissionY = NULL;
+                //Rect to manage collisions in movement func!
+                 bool collision;
+        Sprite* collSprite;
+        collSprite = NULL;
+        for(int j = 0; j < sprites.size(); j++){
+            Sprite* otherSprite = sprites[j];
+            if(j != i){
+                collision = collidedOther(sprites[i],otherSprite);
+                if(collision){
+                    collSprite = sprites[i];
+                }
+            }
+         }
         if(offScreen(sprites[i])){
             spritesToDelete.push_back(sprites[i]);
         }else{
-            sprites[i]->tick(collisionX, collissionY);
+            sprites[i]->tick(collSprite);
         }
     }
 
@@ -98,7 +123,32 @@ bool GameEngine::offScreen(Sprite* sprite){
     return false;
 }
 
-SDL_Rect GameEngine::collidedOther(Sprite *other, Sprite *current){
+bool GameEngine::collidedOther(Sprite *other, Sprite *current){
+
+    //These variables hold the topleft and bottomright
+    //corner coordinates!
+    struct Point{
+        int x;
+        int y;
+    };
+    Point otherTopLeft = { other->getRect().x , other->getRect().y};
+    Point otherBotRight = { otherTopLeft.x +  other->getRect().w ,
+                            otherTopLeft.y + other->getRect().h };
+    Point currentTopLeft ={current->getRect().x, current->getRect().y};
+    Point currentBotRight = {currentTopLeft.x + current->getRect().w,currentTopLeft.y + current->getRect().h};
+
+
+   //Checks if one is above other
+   if(currentBotRight.y < otherTopLeft.y || otherBotRight.y < currentTopLeft.y){
+       return false;
+   }
+   //Checks if one is left of other
+   if(currentBotRight.x < otherBotRight.x || currentTopLeft.x > otherBotRight.x){
+      return false;
+
+   }
+    cout<<"We had a collission!"<<endl;
+   return  true;
 
 };
 

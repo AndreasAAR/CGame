@@ -10,19 +10,17 @@
 #include "NPCSprite.h"
 class AnimatedEnemy : public NPCSprite {
 public:
-    AnimatedEnemy(int xPos, int yPos, const string &path, SDL_Renderer *renderer, Direction direction, string imagePath,
-                      string imageFolder, int NUMBERFRAMES);
+    AnimatedEnemy(int xPos, int yPos, const string &path, SDL_Renderer *renderer, Direction direction
+                      );
 
-    void tick(int collisionX, int collisionY) override{
-        NPCSprite::tick(collisionX, collisionY);
+    void tick(Sprite* sprite) override{
+        NPCSprite::tick(sprite);
         updateImage();
-
     }
     void updateImage();
 private:
-    int NUMBERFRAMES = 5;
+    int numberFrames;
     int currentFrame = 0;
-    std::vector<string> imagePaths;
 };
 
 

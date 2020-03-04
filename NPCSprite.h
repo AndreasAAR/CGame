@@ -18,8 +18,8 @@ class NPCSprite:public MovingSprite {
 public:
     Direction direction;
      NPCSprite(int xPos, int yPos, string path, SDL_Renderer *renderer, Direction direction);
-    void move(int collideX, int collideY);
-   virtual void tick(int collisionX, int collisionY) ;
+     void move(int x, int y);
+     virtual void tick(Sprite* sprite) ;
 
 };
 

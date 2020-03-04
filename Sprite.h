@@ -19,7 +19,7 @@ public:
 
     int getYPos() const { return yPos; }
 
-    const SDL_Rect &getRect() const { return rect; }
+    const SDL_Rect getRect() const { return rect; }
 
     SDL_Surface *getImage() const { return image;}
 
@@ -28,10 +28,8 @@ public:
     Sprite(int xPos,int yPos, string path, SDL_Renderer* renderer);
 
     void draw();
-    virtual void tick(int x, int y) = 0;
-    const string* getPath(){return path; }
+    virtual void tick(Sprite* collissionSprite) = 0;
     virtual ~Sprite(){
-        cout<<"Sprite deleted";
         SDL_DestroyTexture(texture);
     };
 protected:

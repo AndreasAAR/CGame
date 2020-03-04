@@ -18,24 +18,22 @@ public:
     vector<Sprite*>  collidedSprites;
     vector<Sprite*>  sprites;
     SDL_Renderer* renderer;
-    Sprite* enemytype;
     int spawnCounter = 0;
 
     GUI* gui;
     GameEngine(GUI* gui, SDL_Renderer* renderer, int windowHeight, int windowWidth);
     void gameLoop();
-    void addSprites(std::vector<Sprite*> sprites);
 
 private:
     int windowWidth;
     int windowHeight;
    void addSprite(Sprite* sprite);
    bool offScreen(Sprite* sprite);
-    void manageSprites();
     void deleteSprites();
-    bool collidingScreen(SDL_Rect* rect, SDL_Window* window);
+    bool collidingScreen(SDL_Rect rect, SDL_Window* window);
     void spawnSprites();
-    SDL_Rect collidedOther(Sprite *other, Sprite *current);
+    bool collidedOther(Sprite *other, Sprite *current);
+    void manageSprites(SDL_Event* keyPress);
 };
 
 
