@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 11)
 
 
 
-add_executable(CGame ExampleGame.cpp Sprite.cpp Sprite.h MovingSprite.h PlayerSprite.h GUI.h GUI.cpp GameEngine.cpp GameEngine.h NPCSprite.cpp NPCSprite.h MovingSprite.cpp AnimatedEnemy.cpp AnimatedEnemy.h PlayerSprite.cpp)
+add_executable(CGame ExampleGame.cpp Sprite.cpp Sprite.h MovingSprite.h PlayerSprite.h GUI.h GUI.cpp GameEngine.cpp GameEngine.h NPCSprite.cpp NPCSprite.h MovingSprite.cpp AnimatedEnemy.cpp AnimatedEnemy.h PlayerSprite.cpp TextSprite.cpp TextSprite.h Background.cpp Background.h)
 
 
 set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR})

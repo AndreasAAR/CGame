@@ -8,6 +8,7 @@
 #include "AnimatedEnemy.h"
 #include "stdio.h"
 #include "PlayerSprite.h"
+#include "Background.h"
 
 void GameEngine::addSprite(Sprite* sprite){
     GameEngine::sprites.push_back(sprite);
@@ -36,12 +37,19 @@ void GameEngine::spawnSprites(){
 
 void GameEngine::gameLoop() {
     bool runOn = true;
+
     //Put into a template func!
     while (runOn) {
 
         //TODO
         // Put spawning in installable function later
-        spawnSprites();
+        if(lost == false){
+          spawnSprites();
+        }
+        if(lost){
+            string bPath = SDL_GetBasePath();
+            addSprite(new Background(0, 0, bPath+"Resources/7.jpg", renderer));
+        }
 
         SDL_Event keyPress;
         while (SDL_PollEvent(&keyPress)) {
@@ -60,10 +68,11 @@ void GameEngine::gameLoop() {
 } // yttre while
 
 void GameEngine::manageSprites(SDL_Event* keyPress){
+    bool collision = false;
     for (int i = 0; i < sprites.size(); i++) {
         //insert collisioncheck också!
                 //Rect to manage collisions in movement func!
-                 bool collision;
+
         Sprite* collSprite;
         collSprite = NULL;
         for(int j = 0; j < sprites.size(); j++){
@@ -71,7 +80,14 @@ void GameEngine::manageSprites(SDL_Event* keyPress){
             if(j != i){
                 collision = collidedOther(sprites[i],otherSprite);
                 if(collision){
-                    collSprite = sprites[i];
+                    spritesToDelete.push_back(sprites[i]);
+                    spritesToDelete.push_back(sprites[j]);
+                    if(dynamic_cast<PlayerSprite *>(sprites[i]) || dynamic_cast<PlayerSprite *>(sprites[j]) ){
+                        cout<<"player"<<endl;
+                        lost = true;
+                    }
+
+                    //if( typeid(sprites[i]).name()("PlayerSprite") || typeid(sprites[j]).name() == "PlayerSprite")
                 }
             }
          }
@@ -81,7 +97,9 @@ void GameEngine::manageSprites(SDL_Event* keyPress){
             sprites[i]->tick(0,0,keyPress);
         }
     }
-
+    if(lost){
+        sprites.clear();
+    }
     deleteSprites();
     collidedSprites.clear();
 }
@@ -110,6 +128,10 @@ bool GameEngine::offScreen(Sprite* sprite){
 }
 
 bool GameEngine::collidedOther(Sprite *other, Sprite *current){
+
+    if(dynamic_cast<Background *>(other) || dynamic_cast<Background *>(current)){
+        return false;
+    }
 
     //These variables hold the topleft and bottomright
     //corner coordinates!

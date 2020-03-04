@@ -234,6 +234,14 @@ vector
 NPCSprite.h
 /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/NPCSprite.h
 
+/Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/Background.cpp
+Background.h
+/Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/Background.h
+
+/Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/Background.h
+Sprite.h
+/Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/Sprite.h
+
 /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/ExampleGame.cpp
 iostream
 -
@@ -283,6 +291,8 @@ stdio.h
 /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/stdio.h
 PlayerSprite.h
 /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/PlayerSprite.h
+Background.h
+/Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/Background.h
 
 /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/GameEngine.h
 vector
@@ -348,5 +358,17 @@ SDL_rect.h
 SDL_image.h
 -
 iostream
+-
+
+/Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/TextSprite.cpp
+TextSprite.h
+/Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/TextSprite.h
+
+/Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/TextSprite.h
+SDL_pixels.h
+-
+SDL_surface.h
+-
+SDL_render.h
 -
 

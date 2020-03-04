@@ -25,6 +25,7 @@ public:
     void gameLoop();
 
 private:
+    bool lost = false;
     int windowWidth;
     int windowHeight;
    void addSprite(Sprite* sprite);

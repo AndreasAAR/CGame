@@ -249,6 +249,54 @@ CMakeFiles/CGame.dir/PlayerSprite.cpp.o.provides: CMakeFiles/CGame.dir/PlayerSpr
 CMakeFiles/CGame.dir/PlayerSprite.cpp.o.provides.build: CMakeFiles/CGame.dir/PlayerSprite.cpp.o
 
 
+CMakeFiles/CGame.dir/TextSprite.cpp.o: CMakeFiles/CGame.dir/flags.make
+CMakeFiles/CGame.dir/TextSprite.cpp.o: ../TextSprite.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/CGame.dir/TextSprite.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CGame.dir/TextSprite.cpp.o -c /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/TextSprite.cpp
+
+CMakeFiles/CGame.dir/TextSprite.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CGame.dir/TextSprite.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/TextSprite.cpp > CMakeFiles/CGame.dir/TextSprite.cpp.i
+
+CMakeFiles/CGame.dir/TextSprite.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CGame.dir/TextSprite.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/TextSprite.cpp -o CMakeFiles/CGame.dir/TextSprite.cpp.s
+
+CMakeFiles/CGame.dir/TextSprite.cpp.o.requires:
+
+.PHONY : CMakeFiles/CGame.dir/TextSprite.cpp.o.requires
+
+CMakeFiles/CGame.dir/TextSprite.cpp.o.provides: CMakeFiles/CGame.dir/TextSprite.cpp.o.requires
+	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/TextSprite.cpp.o.provides.build
+.PHONY : CMakeFiles/CGame.dir/TextSprite.cpp.o.provides
+
+CMakeFiles/CGame.dir/TextSprite.cpp.o.provides.build: CMakeFiles/CGame.dir/TextSprite.cpp.o
+
+
+CMakeFiles/CGame.dir/Background.cpp.o: CMakeFiles/CGame.dir/flags.make
+CMakeFiles/CGame.dir/Background.cpp.o: ../Background.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/CGame.dir/Background.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CGame.dir/Background.cpp.o -c /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/Background.cpp
+
+CMakeFiles/CGame.dir/Background.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CGame.dir/Background.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/Background.cpp > CMakeFiles/CGame.dir/Background.cpp.i
+
+CMakeFiles/CGame.dir/Background.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CGame.dir/Background.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/Background.cpp -o CMakeFiles/CGame.dir/Background.cpp.s
+
+CMakeFiles/CGame.dir/Background.cpp.o.requires:
+
+.PHONY : CMakeFiles/CGame.dir/Background.cpp.o.requires
+
+CMakeFiles/CGame.dir/Background.cpp.o.provides: CMakeFiles/CGame.dir/Background.cpp.o.requires
+	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/Background.cpp.o.provides.build
+.PHONY : CMakeFiles/CGame.dir/Background.cpp.o.provides
+
+CMakeFiles/CGame.dir/Background.cpp.o.provides.build: CMakeFiles/CGame.dir/Background.cpp.o
+
+
 # Object files for target CGame
 CGame_OBJECTS = \
 "CMakeFiles/CGame.dir/ExampleGame.cpp.o" \
@@ -258,7 +306,9 @@ CGame_OBJECTS = \
 "CMakeFiles/CGame.dir/NPCSprite.cpp.o" \
 "CMakeFiles/CGame.dir/MovingSprite.cpp.o" \
 "CMakeFiles/CGame.dir/AnimatedEnemy.cpp.o" \
-"CMakeFiles/CGame.dir/PlayerSprite.cpp.o"
+"CMakeFiles/CGame.dir/PlayerSprite.cpp.o" \
+"CMakeFiles/CGame.dir/TextSprite.cpp.o" \
+"CMakeFiles/CGame.dir/Background.cpp.o"
 
 # External object files for target CGame
 CGame_EXTERNAL_OBJECTS =
@@ -271,9 +321,11 @@ CGame: CMakeFiles/CGame.dir/NPCSprite.cpp.o
 CGame: CMakeFiles/CGame.dir/MovingSprite.cpp.o
 CGame: CMakeFiles/CGame.dir/AnimatedEnemy.cpp.o
 CGame: CMakeFiles/CGame.dir/PlayerSprite.cpp.o
+CGame: CMakeFiles/CGame.dir/TextSprite.cpp.o
+CGame: CMakeFiles/CGame.dir/Background.cpp.o
 CGame: CMakeFiles/CGame.dir/build.make
 CGame: CMakeFiles/CGame.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable CGame"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable CGame"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CGame.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -289,6 +341,8 @@ CMakeFiles/CGame.dir/requires: CMakeFiles/CGame.dir/NPCSprite.cpp.o.requires
 CMakeFiles/CGame.dir/requires: CMakeFiles/CGame.dir/MovingSprite.cpp.o.requires
 CMakeFiles/CGame.dir/requires: CMakeFiles/CGame.dir/AnimatedEnemy.cpp.o.requires
 CMakeFiles/CGame.dir/requires: CMakeFiles/CGame.dir/PlayerSprite.cpp.o.requires
+CMakeFiles/CGame.dir/requires: CMakeFiles/CGame.dir/TextSprite.cpp.o.requires
+CMakeFiles/CGame.dir/requires: CMakeFiles/CGame.dir/Background.cpp.o.requires
 
 .PHONY : CMakeFiles/CGame.dir/requires
 

@@ -19,6 +19,22 @@ CMakeFiles/CGame.dir/AnimatedEnemy.cpp.o: ../MovingSprite.h
 CMakeFiles/CGame.dir/AnimatedEnemy.cpp.o: ../NPCSprite.h
 CMakeFiles/CGame.dir/AnimatedEnemy.cpp.o: ../Sprite.h
 
+CMakeFiles/CGame.dir/Background.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_config.h
+CMakeFiles/CGame.dir/Background.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_config_macosx.h
+CMakeFiles/CGame.dir/Background.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_endian.h
+CMakeFiles/CGame.dir/Background.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_error.h
+CMakeFiles/CGame.dir/Background.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_pixels.h
+CMakeFiles/CGame.dir/Background.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_platform.h
+CMakeFiles/CGame.dir/Background.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_rect.h
+CMakeFiles/CGame.dir/Background.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_rwops.h
+CMakeFiles/CGame.dir/Background.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_stdinc.h
+CMakeFiles/CGame.dir/Background.cpp.o: /Library/Frameworks/SDL2.framework/Headers/begin_code.h
+CMakeFiles/CGame.dir/Background.cpp.o: /Library/Frameworks/SDL2.framework/Headers/close_code.h
+CMakeFiles/CGame.dir/Background.cpp.o: /Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
+CMakeFiles/CGame.dir/Background.cpp.o: ../Background.cpp
+CMakeFiles/CGame.dir/Background.cpp.o: ../Background.h
+CMakeFiles/CGame.dir/Background.cpp.o: ../Sprite.h
+
 CMakeFiles/CGame.dir/ExampleGame.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_blendmode.h
 CMakeFiles/CGame.dir/ExampleGame.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_config.h
 CMakeFiles/CGame.dir/ExampleGame.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_config_macosx.h
@@ -75,6 +91,7 @@ CMakeFiles/CGame.dir/GameEngine.cpp.o: /Library/Frameworks/SDL2.framework/Header
 CMakeFiles/CGame.dir/GameEngine.cpp.o: /Library/Frameworks/SDL2.framework/Headers/close_code.h
 CMakeFiles/CGame.dir/GameEngine.cpp.o: /Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
 CMakeFiles/CGame.dir/GameEngine.cpp.o: ../AnimatedEnemy.h
+CMakeFiles/CGame.dir/GameEngine.cpp.o: ../Background.h
 CMakeFiles/CGame.dir/GameEngine.cpp.o: ../GUI.h
 CMakeFiles/CGame.dir/GameEngine.cpp.o: ../GameEngine.cpp
 CMakeFiles/CGame.dir/GameEngine.cpp.o: ../GameEngine.h
@@ -152,4 +169,22 @@ CMakeFiles/CGame.dir/Sprite.cpp.o: /Library/Frameworks/SDL2.framework/Headers/cl
 CMakeFiles/CGame.dir/Sprite.cpp.o: /Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
 CMakeFiles/CGame.dir/Sprite.cpp.o: ../Sprite.cpp
 CMakeFiles/CGame.dir/Sprite.cpp.o: ../Sprite.h
+
+CMakeFiles/CGame.dir/TextSprite.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_blendmode.h
+CMakeFiles/CGame.dir/TextSprite.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_config.h
+CMakeFiles/CGame.dir/TextSprite.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_config_macosx.h
+CMakeFiles/CGame.dir/TextSprite.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_endian.h
+CMakeFiles/CGame.dir/TextSprite.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_error.h
+CMakeFiles/CGame.dir/TextSprite.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_pixels.h
+CMakeFiles/CGame.dir/TextSprite.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_platform.h
+CMakeFiles/CGame.dir/TextSprite.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_rect.h
+CMakeFiles/CGame.dir/TextSprite.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_render.h
+CMakeFiles/CGame.dir/TextSprite.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_rwops.h
+CMakeFiles/CGame.dir/TextSprite.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_stdinc.h
+CMakeFiles/CGame.dir/TextSprite.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_surface.h
+CMakeFiles/CGame.dir/TextSprite.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_video.h
+CMakeFiles/CGame.dir/TextSprite.cpp.o: /Library/Frameworks/SDL2.framework/Headers/begin_code.h
+CMakeFiles/CGame.dir/TextSprite.cpp.o: /Library/Frameworks/SDL2.framework/Headers/close_code.h
+CMakeFiles/CGame.dir/TextSprite.cpp.o: ../TextSprite.cpp
+CMakeFiles/CGame.dir/TextSprite.cpp.o: ../TextSprite.h
 

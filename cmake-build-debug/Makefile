@@ -150,6 +150,33 @@ AnimatedEnemy.cpp.s:
 	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/AnimatedEnemy.cpp.s
 .PHONY : AnimatedEnemy.cpp.s
 
+Background.o: Background.cpp.o
+
+.PHONY : Background.o
+
+# target to build an object file
+Background.cpp.o:
+	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/Background.cpp.o
+.PHONY : Background.cpp.o
+
+Background.i: Background.cpp.i
+
+.PHONY : Background.i
+
+# target to preprocess a source file
+Background.cpp.i:
+	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/Background.cpp.i
+.PHONY : Background.cpp.i
+
+Background.s: Background.cpp.s
+
+.PHONY : Background.s
+
+# target to generate assembly for a file
+Background.cpp.s:
+	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/Background.cpp.s
+.PHONY : Background.cpp.s
+
 ExampleGame.o: ExampleGame.cpp.o
 
 .PHONY : ExampleGame.o
@@ -339,6 +366,33 @@ Sprite.cpp.s:
 	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/Sprite.cpp.s
 .PHONY : Sprite.cpp.s
 
+TextSprite.o: TextSprite.cpp.o
+
+.PHONY : TextSprite.o
+
+# target to build an object file
+TextSprite.cpp.o:
+	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/TextSprite.cpp.o
+.PHONY : TextSprite.cpp.o
+
+TextSprite.i: TextSprite.cpp.i
+
+.PHONY : TextSprite.i
+
+# target to preprocess a source file
+TextSprite.cpp.i:
+	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/TextSprite.cpp.i
+.PHONY : TextSprite.cpp.i
+
+TextSprite.s: TextSprite.cpp.s
+
+.PHONY : TextSprite.s
+
+# target to generate assembly for a file
+TextSprite.cpp.s:
+	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/TextSprite.cpp.s
+.PHONY : TextSprite.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -351,6 +405,9 @@ help:
 	@echo "... AnimatedEnemy.o"
 	@echo "... AnimatedEnemy.i"
 	@echo "... AnimatedEnemy.s"
+	@echo "... Background.o"
+	@echo "... Background.i"
+	@echo "... Background.s"
 	@echo "... ExampleGame.o"
 	@echo "... ExampleGame.i"
 	@echo "... ExampleGame.s"
@@ -372,6 +429,9 @@ help:
 	@echo "... Sprite.o"
 	@echo "... Sprite.i"
 	@echo "... Sprite.s"
+	@echo "... TextSprite.o"
+	@echo "... TextSprite.i"
+	@echo "... TextSprite.s"
 .PHONY : help
 
 
