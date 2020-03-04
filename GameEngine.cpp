@@ -27,13 +27,9 @@ void GameEngine::spawnSprites(){
             randomPos -= 300;
         if (randomPos < 200)
             randomPos += 300;
-
-
         string path = bPath+"Resources/pokeball/frame0.png";
-        NPCSprite* test = new NPCSprite(0, randomPos, path , renderer, RIGHT);
-        NPCSprite* test2 = new NPCSprite(400, randomPos, path , renderer, LEFT);
-        addSprite(test);
-        addSprite(test2);
+       addSprite(new NPCSprite(0, randomPos, bPath + "Resources/pokeball/frame0.png", renderer, RIGHT));
+
     }
 
 }
@@ -49,16 +45,9 @@ void GameEngine::gameLoop() {
 
         SDL_Event keyPress;
         while (SDL_PollEvent(&keyPress)) {
-
-
             switch (keyPress.type) {
                 case SDL_QUIT:
-                    runOn = false;
-                    break;
-                case SDL_KEYDOWN:
-                    if (keyPress.key.keysym.sym == SDLK_DOWN)
-                        runOn = false;
-                    break;
+                   runOn = false;
             } // switch
         } // inre while
         SDL_RenderClear(renderer);
@@ -68,10 +57,7 @@ void GameEngine::gameLoop() {
     }
 
     SDL_Quit();
-
 } // yttre while
-
-
 
 void GameEngine::manageSprites(SDL_Event* keyPress){
     for (int i = 0; i < sprites.size(); i++) {
@@ -92,7 +78,7 @@ void GameEngine::manageSprites(SDL_Event* keyPress){
         if(offScreen(sprites[i])){
             spritesToDelete.push_back(sprites[i]);
         }else{
-            sprites[i]->tick(collSprite);
+            sprites[i]->tick(0,0,keyPress);
         }
     }
 
@@ -155,10 +141,12 @@ bool GameEngine::collidedOther(Sprite *other, Sprite *current){
 
 
 GameEngine::GameEngine(GUI *gui, SDL_Renderer *renderer,int windowHeight, int windowWidth) {
+    string bPath = SDL_GetBasePath();
     this->renderer = renderer;
     this->gui = gui;
     this->windowWidth= windowWidth;
     this->windowHeight = windowHeight;
+    addSprite(new PlayerSprite(300, 300, bPath + "Resources/Protagonist.png", renderer, LEFT));
 }
 
 

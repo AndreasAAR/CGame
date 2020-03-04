@@ -10,7 +10,7 @@
 
 
 enum Direction{
-    TOP,BOT,LEFT,RIGHT
+    TOP,BOT,LEFT,RIGHT, NEUTRAL
 };
 
 class NPCSprite:public MovingSprite {
@@ -19,7 +19,7 @@ public:
     Direction direction;
      NPCSprite(int xPos, int yPos, string path, SDL_Renderer *renderer, Direction direction);
      void move(int x, int y);
-     virtual void tick(Sprite* sprite) ;
+   void tick(int collisionX, int collisionY, SDL_Event *event) ;
 
 };
 

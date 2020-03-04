@@ -86,6 +86,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/AnimatedEnemy.cpp">
+			<Option target="CGame"/>
+		</Unit>
+		<Unit filename="/Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/AnimatedEnemy.h">
+			<Option target="CGame"/>
+		</Unit>
 		<Unit filename="/Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/ExampleGame.cpp">
 			<Option target="CGame"/>
 		</Unit>
@@ -111,6 +117,9 @@
 			<Option target="CGame"/>
 		</Unit>
 		<Unit filename="/Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/NPCSprite.h">
+			<Option target="CGame"/>
+		</Unit>
+		<Unit filename="/Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/PlayerSprite.cpp">
 			<Option target="CGame"/>
 		</Unit>
 		<Unit filename="/Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/PlayerSprite.h">

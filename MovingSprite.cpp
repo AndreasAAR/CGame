@@ -5,8 +5,8 @@
 #include "MovingSprite.h"
 #include "SDL_rect.h"
 
-void MovingSprite::tick(Sprite* collissionSprite){
 
+void MovingSprite::tick(int x, int y, SDL_Event *event){
     move(0,0);
     draw();
 

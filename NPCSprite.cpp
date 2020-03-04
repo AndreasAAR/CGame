@@ -31,13 +31,17 @@ void NPCSprite::move(int x, int y) {
         case(RIGHT):
             xNew++;
             break;
+        case(NEUTRAL):
+            //do nothing
+        default:
+            break;
     }
     MovingSprite::move(xNew,yNew);
 }
 
-void NPCSprite::tick(Sprite* sprite){
-    move(0,0);
-    draw();
 
+void NPCSprite::tick(int collisionX, int collisionY, SDL_Event *event){
+    draw();
+    move(0,0);
 }
 

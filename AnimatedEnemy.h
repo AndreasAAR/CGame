@@ -10,12 +10,11 @@
 #include "NPCSprite.h"
 class AnimatedEnemy : public NPCSprite {
 public:
-    AnimatedEnemy(int xPos, int yPos, const string &path, SDL_Renderer *renderer, Direction direction
-                      );
+    AnimatedEnemy(int xPos, int yPos, const string &path, SDL_Renderer *renderer, Direction direction);
 
-    void tick(Sprite* sprite) override{
-        NPCSprite::tick(sprite);
-        updateImage();
+    void tick(int x, int y, SDL_Event* event) override {
+        NPCSprite::tick(0,0,event);
+
     }
     void updateImage();
 private:

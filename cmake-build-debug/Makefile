@@ -123,6 +123,33 @@ CGame/fast:
 	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/build
 .PHONY : CGame/fast
 
+AnimatedEnemy.o: AnimatedEnemy.cpp.o
+
+.PHONY : AnimatedEnemy.o
+
+# target to build an object file
+AnimatedEnemy.cpp.o:
+	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/AnimatedEnemy.cpp.o
+.PHONY : AnimatedEnemy.cpp.o
+
+AnimatedEnemy.i: AnimatedEnemy.cpp.i
+
+.PHONY : AnimatedEnemy.i
+
+# target to preprocess a source file
+AnimatedEnemy.cpp.i:
+	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/AnimatedEnemy.cpp.i
+.PHONY : AnimatedEnemy.cpp.i
+
+AnimatedEnemy.s: AnimatedEnemy.cpp.s
+
+.PHONY : AnimatedEnemy.s
+
+# target to generate assembly for a file
+AnimatedEnemy.cpp.s:
+	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/AnimatedEnemy.cpp.s
+.PHONY : AnimatedEnemy.cpp.s
+
 ExampleGame.o: ExampleGame.cpp.o
 
 .PHONY : ExampleGame.o
@@ -258,6 +285,33 @@ NPCSprite.cpp.s:
 	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/NPCSprite.cpp.s
 .PHONY : NPCSprite.cpp.s
 
+PlayerSprite.o: PlayerSprite.cpp.o
+
+.PHONY : PlayerSprite.o
+
+# target to build an object file
+PlayerSprite.cpp.o:
+	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/PlayerSprite.cpp.o
+.PHONY : PlayerSprite.cpp.o
+
+PlayerSprite.i: PlayerSprite.cpp.i
+
+.PHONY : PlayerSprite.i
+
+# target to preprocess a source file
+PlayerSprite.cpp.i:
+	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/PlayerSprite.cpp.i
+.PHONY : PlayerSprite.cpp.i
+
+PlayerSprite.s: PlayerSprite.cpp.s
+
+.PHONY : PlayerSprite.s
+
+# target to generate assembly for a file
+PlayerSprite.cpp.s:
+	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/PlayerSprite.cpp.s
+.PHONY : PlayerSprite.cpp.s
+
 Sprite.o: Sprite.cpp.o
 
 .PHONY : Sprite.o
@@ -294,6 +348,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... CGame"
+	@echo "... AnimatedEnemy.o"
+	@echo "... AnimatedEnemy.i"
+	@echo "... AnimatedEnemy.s"
 	@echo "... ExampleGame.o"
 	@echo "... ExampleGame.i"
 	@echo "... ExampleGame.s"
@@ -309,6 +366,9 @@ help:
 	@echo "... NPCSprite.o"
 	@echo "... NPCSprite.i"
 	@echo "... NPCSprite.s"
+	@echo "... PlayerSprite.o"
+	@echo "... PlayerSprite.i"
+	@echo "... PlayerSprite.s"
 	@echo "... Sprite.o"
 	@echo "... Sprite.i"
 	@echo "... Sprite.s"

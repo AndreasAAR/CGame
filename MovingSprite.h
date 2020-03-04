@@ -15,7 +15,9 @@ public:
     MovingSprite(int xPos, int yPos, string path, SDL_Renderer* renderer): Sprite(xPos, yPos, path, renderer)
     {
     };
-    void tick(Sprite* collissionSprite);
+
+    void tick(int x, int y, SDL_Event *event);
+
 protected:
     void move(int x, int y);
 };
