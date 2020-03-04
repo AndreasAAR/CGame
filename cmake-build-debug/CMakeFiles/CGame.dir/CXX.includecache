@@ -214,20 +214,6 @@ SDL2/begin_code.h
 SDL2/close_code.h
 -
 
-/Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/AnimatedEnemy.cpp
-AnimatedEnemy.h
-/Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/AnimatedEnemy.h
-stdlib.h
--
-sys/types.h
--
-dirent.h
--
-string
--
-vector
--
-
 /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/AnimatedEnemy.h
 vector
 -
@@ -281,6 +267,8 @@ AnimatedEnemy.h
 /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/AnimatedEnemy.h
 stdio.h
 /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/stdio.h
+PlayerSprite.h
+/Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/PlayerSprite.h
 
 /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/GameEngine.h
 vector
@@ -317,6 +305,12 @@ NPCSprite.h
 /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/NPCSprite.h
 MovingSprite.h
 /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/MovingSprite.h
+
+/Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/PlayerSprite.h
+MovingSprite.h
+/Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/MovingSprite.h
+NPCSprite.h
+/Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/NPCSprite.h
 
 /Users/AAR/Dropbox/Andreas/PLUGG_JOBB/VT2020/CSpelet/CGame/Sprite.cpp
 Sprite.h

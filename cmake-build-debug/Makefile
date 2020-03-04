@@ -123,33 +123,6 @@ CGame/fast:
 	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/build
 .PHONY : CGame/fast
 
-AnimatedEnemy.o: AnimatedEnemy.cpp.o
-
-.PHONY : AnimatedEnemy.o
-
-# target to build an object file
-AnimatedEnemy.cpp.o:
-	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/AnimatedEnemy.cpp.o
-.PHONY : AnimatedEnemy.cpp.o
-
-AnimatedEnemy.i: AnimatedEnemy.cpp.i
-
-.PHONY : AnimatedEnemy.i
-
-# target to preprocess a source file
-AnimatedEnemy.cpp.i:
-	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/AnimatedEnemy.cpp.i
-.PHONY : AnimatedEnemy.cpp.i
-
-AnimatedEnemy.s: AnimatedEnemy.cpp.s
-
-.PHONY : AnimatedEnemy.s
-
-# target to generate assembly for a file
-AnimatedEnemy.cpp.s:
-	$(MAKE) -f CMakeFiles/CGame.dir/build.make CMakeFiles/CGame.dir/AnimatedEnemy.cpp.s
-.PHONY : AnimatedEnemy.cpp.s
-
 ExampleGame.o: ExampleGame.cpp.o
 
 .PHONY : ExampleGame.o
@@ -321,9 +294,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... CGame"
-	@echo "... AnimatedEnemy.o"
-	@echo "... AnimatedEnemy.i"
-	@echo "... AnimatedEnemy.s"
 	@echo "... ExampleGame.o"
 	@echo "... ExampleGame.i"
 	@echo "... ExampleGame.s"

@@ -5,7 +5,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/CGame.dir/GameEngine.cpp.o"
   "CMakeFiles/CGame.dir/NPCSprite.cpp.o"
   "CMakeFiles/CGame.dir/MovingSprite.cpp.o"
-  "CMakeFiles/CGame.dir/AnimatedEnemy.cpp.o"
   "CGame.pdb"
   "CGame"
 )
